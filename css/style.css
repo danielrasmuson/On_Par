@@ -112,9 +112,9 @@ header{
 
 
 #main {
+    padding-top: 15px;
+    padding-bottom: 15px;
     min-height: 475px;
-    margin: 0px;
-    padding: 0px;
     display: -webkit-flex;
     display:         -webkit-box;
     display:         -ms-flexbox;

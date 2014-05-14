@@ -3,6 +3,14 @@
     <title></title>
     <script type="text/javascript" src=""></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- for slider!! -->
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <!-- end of slider -->
 </head>
 <body>
 
@@ -11,7 +19,34 @@
 
 <div id='main'>
     <div class="center">
-        This is some content that will be in the middle
+        Our goal at On Par Connections is to create a strong and successful networking environment to help students of the MSU College of Business create professional relationships with employers in their future fields of work.
+        <br>
+        <br>
+        <br>
+
+        <!-- slider -->
+        <div id="wrapper">
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <!-- todo make these images smaller -->
+                    <img src="img/cover1.jpg" data-thumb="img/cover1.jpg" alt="" />
+                    <img src="img/cover2.jpg" data-thumb="img/cover2.jpg" alt="" />
+                    <img src="img/cover3.jpg" data-thumb="img/cover3.jpg" alt="" />
+                    <img src="img/cover4.jpg" data-thumb="img/cover4.jpg" alt="" />
+                </div>
+            </div>
+
+        </div>
+        <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+        <script type="text/javascript" src="jquery.nivo.slider.js"></script>
+        <script type="text/javascript">
+        $(window).load(function() {
+            $('#slider').nivoSlider();
+        });
+        </script>
+        <!-- end of slider -->
+
+
     </div>
 </div>
 
