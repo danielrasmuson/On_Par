@@ -5,6 +5,8 @@ body {
     background: -moz-linear-gradient(#8436AD, #672A89);
     background: linear-gradient(#8436AD, #672A89);
     margin: 0px 0px 0px 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
 }
 /*####################################*/
 /* General*/
