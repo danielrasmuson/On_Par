@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <title></title>
     <script type="text/javascript" src=""></script>
@@ -13,47 +14,52 @@
     <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
     <!-- end of slider -->
 </head>
+
 <body>
 
-<!-- put in header -->
-<script language="javascript" type="text/javascript" src="js/header.js"></script>
+    <!-- put in header -->
+    <!-- todo make this an angular include or template -->
+    <script language="javascript" type="text/javascript" src="js/header.js"></script>
 
-<div id='main'>
-    <div class="center">
-        Our goal at On Par Connections is to create a strong and successful networking environment to help students of the MSU College of Business create professional relationships with employers in their future fields of work.
-        <br>
-        <br>
-        <br>
+    <div id='main'>
+        <div class="center">
+            <p>
+                Our goal at On Par Connections is to create a strong and successful networking environment to help students of the MSU College of Business create professional relationships with employers in their future fields of work.
+            </p>
+            <br>
+            <br>
+            <br>
 
-        <!-- slider -->
-        <div id="wrapper">
-            <div class="slider-wrapper theme-default">
-                <div id="slider" class="nivoSlider">
-                    <!-- todo make these images smaller -->
-                    <img src="img/cover1_landscape.jpg" data-thumb="img/cover1_landscape.jpg" alt="" />
-                    <img src="img/cover2_landscape.jpg" data-thumb="img/cover2_landscape.jpg" alt="" />
-                    <img src="img/cover3_landscape.jpg" data-thumb="img/cover3_landscape.jpg" alt="" />
-                    <img src="img/cover4_landscape.jpg" data-thumb="img/cover4_landscape.jpg" alt="" />
+            <!-- slider -->
+            <div id="wrapper">
+                <div class="slider-wrapper theme-default">
+                    <div id="slider" class="nivoSlider">
+                        <!-- todo make these images smaller -->
+                        <img src="img/cover1_landscape.jpg" data-thumb="img/cover1_landscape.jpg" alt="" />
+                        <img src="img/cover2_landscape.jpg" data-thumb="img/cover2_landscape.jpg" alt="" />
+                        <img src="img/cover3_landscape.jpg" data-thumb="img/cover3_landscape.jpg" alt="" />
+                        <img src="img/cover4_landscape.jpg" data-thumb="img/cover4_landscape.jpg" alt="" />
+                    </div>
                 </div>
+
             </div>
+            <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+            <script type="text/javascript" src="jquery.nivo.slider.js"></script>
+            <script type="text/javascript">
+            $(window).load(function() {
+                $('#slider').nivoSlider();
+            });
+            </script>
+            <!-- end of slider -->
+
 
         </div>
-        <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
-        <script type="text/javascript" src="jquery.nivo.slider.js"></script>
-        <script type="text/javascript">
-        $(window).load(function() {
-            $('#slider').nivoSlider();
-        });
-        </script>
-        <!-- end of slider -->
+    </div>
 
+    <!-- put in header -->
+    <script language="javascript" type="text/javascript" src="js/footer.js"></script>
 
     </div>
-</div>
-
-<!-- put in header -->
-<script language="javascript" type="text/javascript" src="js/footer.js"></script>
-
-</div>
 </body>
+
 </html>
