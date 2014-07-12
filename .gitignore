@@ -214,3 +214,5 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 sftp-config.json
+project.sublime-project
+project.sublime-workspace
