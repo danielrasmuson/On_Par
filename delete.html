@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+    <script>
+    angular.module('app', []);
+
+    angular.module('app')
+        .controller('BodyController', function(\$scope) {
+            \$scope.hello = 'Hi';
+        });
+    </script>
+  </head>
+  <body ng-controller="BodyController">
+  {{hello}}
+  </body>
+</html>

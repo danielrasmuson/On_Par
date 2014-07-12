@@ -4,8 +4,25 @@
     <script type="text/javascript" src=""></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+    <script>
+    angular.module('app', []);
+
+    angular.module('app')
+        .controller('navController', function($scope) {
+            $scope.navStatus = {
+                index: "",
+                events: "",
+                updates: "",
+                donate: "active",
+                contact: ""
+            };
+        });
+    </script>
+
 </head>
-<body>
+
+<body ng-app="app">
 
     <!-- put in header -->
     <script language="javascript" type="text/javascript" src="js/header.js"></script>
